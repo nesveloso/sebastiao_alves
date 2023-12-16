@@ -12,14 +12,14 @@ function getAssets(){
 
 // Novos dados de hospedagem
 $base_dados = [
-    "host" => "localhost",
+    "host" => "monorail.proxy.rlwy.net",
     "user" => "root",
-    "password" => "",
-    "database" => "sebastiao_alves_bd"
+    "password" => "d5G6GBa6CchcaC4eEH3bDHCC61E2dHDd",
+    "database" => "railway",
+    "port" => 41498
 ];
 
-
-$pdo = new PDO("mysql:dbname=" . $base_dados["database"] . ";host=" . $base_dados["host"], $base_dados["user"], $base_dados["password"]);
+$pdo = new PDO("mysql:host=" . $base_dados["host"] . ";port=" . $base_dados["port"] . ";dbname=" . $base_dados["database"], $base_dados["user"], $base_dados["password"]);
 
 //Funçoes
 function selectSQL($sql){

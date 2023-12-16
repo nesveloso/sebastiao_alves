@@ -12,15 +12,14 @@ function getAssets(){
 
 // Novos dados de hospedagem
 $base_dados = [
-    "host" => "sql202.infinityfree.com",
-    "user" => "if0_35600284",
-    "password" => "fqsjrodUtFHd2",
-    "dbname" => "if0_35600284_escritor_alves"
+    "host" => "localhost",
+    "user" => "root",
+    "password" => "",
+    "database" => "sebastiao_alves_bd"
 ];
 
 
-$pdo = new PDO("mysql:host=" . $base_dados["host"] . ";dbname=" . $base_dados["database"], $base_dados["user"], $base_dados["password"]);
-
+$pdo = new PDO("mysql:dbname=" . $base_dados["database"] . ";host=" . $base_dados["host"], $base_dados["user"], $base_dados["password"]);
 
 //Funçoes
 function selectSQL($sql){

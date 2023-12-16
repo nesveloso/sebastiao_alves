@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sebastião Alves</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="fonts/fonts.css">
+  <link rel="stylesheet" href="css/estilo.css">
+  <!-- BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+  <!-- JQUERY -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <!-- JAVASCRIPT -->
+  <script src="javascript/funcoes.js"></script>
+
+</head>
+<body>
+
+  <div id="parte-superior" class="container-fluid">
+    <header class="row">
+        <div class="col-11 mx-auto d-none d-md-block">
+            <div class="row">
+                <div class="col-12 titulo-pagina titulo">Sebastião Alves</div>
+            </div>
+
+            <hr class="row linha-titulo-pagina">
+            <div class="row">
+                <nav class="navbar navbar-expand-md">
+                    <div class="container-fluid">
+                      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                        <ul class="navbar-nav">
+                          <li class="nav-item">
+                            <a class="nav-link active menus" aria-current="page" href="#">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link menus" href="#">Autor</a>
+                          </li>
+                          <li id="menu-livros" class="nav-item dropdown">
+                            <a class="nav-link menus" href="#" id="botao-livros" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Livros
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="botao-livros">
+                              <li><a class="dropdown-item submenus active" href="#">Senhora do amor e da guerra</a></li>
+                              <li><a class="dropdown-item submenus" href="#">O caracol estrábico</a></li>
+                              <li><a class="dropdown-item submenus" href="#">O coleccionador de amnésias</a></li>
+                              <li><a class="dropdown-item submenus" href="#">O velho que pensava que fugia</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link menus" href="#">Imprensa</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link menus" href="#">Contactos</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+            </div>
+        </div>
+
+        <!-- MOBILE -->
+        <div class="col-12 mx-auto d-block d-md-none">
+            <div class="row">
+                <div class="col-12 titulo-pagina titulo mobile">
+                  <div>Sebastião Alves</div>
+                  <button onclick="menuMobile()" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                      <img id="botao-menu-mobile" src="imagens/desktop/menu.svg" alt="Menu">
+                    </span>
+                  </button>
+                </div>
+            </div>
+            <hr class="row linha-titulo-pagina">
+            <div class="row">
+                <nav id="nav-mobile" class="navbar navbar-expand-md mobile">
+                    <div class="container-fluid">
+                      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                        <ul class="navbar-nav mobile">
+                          <li class="nav-item">
+                            <a class="nav-link active menus" aria-current="page" href="#">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link menus" href="#">Autor</a>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link menus" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Livros
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item submenus active" href="#">Senhora do amor e da guerra</a></li>
+                              <li><a class="dropdown-item submenus" href="#">O caracol estrábico</a></li>
+                              <li><a class="dropdown-item submenus" href="#">O coleccionador de amnésias</a></li>
+                              <li><a class="dropdown-item submenus" href="#">O velho que pensava que fugia</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link menus" href="#">Imprensa</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link menus" href="#">Contactos</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+            </div>
+        </div>
+    </header>
+      
+    <!-- Carousel Desktop -->
+    <div class="row d-none d-md-block">
+        <div id="carousel-desktop" class="carousel slide p-0" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carousel-desktop" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carousel-desktop" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carousel-desktop" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carousel-desktop" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="imagens/desktop/cabecalho1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption desktop">
+                  <div class="observacao banner-novidade desktop">Novidade</div>
+                  <br>
+                  <h5 class="banner-titulo desktop">Senhora do amor e da guerra</h5>
+                  <br>
+                  <p class="banner-texto desktop">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Ipsa nobis tempora quae beatae eaque cumque optio consequatur 
+                    Ipsa nobis tempora quae beatae eaque cumque optio consequatur 
+                    asperiores voluptatem?
+                  </p>
+                  <br>
+                  <div class="banner-sabermais desktop">
+                    <div class="botao-sabermais"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="imagens/desktop/cabecalho2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption desktop">
+                  <div class="observacao banner-novidade desktop">Novidade</div>
+                  <br>
+                  <h5 class="banner-titulo desktop">Senhora do amor e da guerra</h5>
+                  <br>
+                  <p class="banner-texto desktop">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Ipsa nobis tempora quae beatae eaque cumque optio consequatur 
+                    Ipsa nobis tempora quae beatae eaque cumque optio consequatur 
+                    asperiores voluptatem?
+                  </p>
+                  <br>
+                  <div class="banner-sabermais desktop">
+                    <div class="botao-sabermais"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="imagens/desktop/cabecalho3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption desktop">
+                  <div class="observacao banner-novidade desktop">Novidade</div>
+                  <br>
+                  <h5 class="banner-titulo desktop">Senhora do amor e da guerra</h5>
+                  <br>
+                  <p class="banner-texto desktop">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Ipsa nobis tempora quae beatae eaque cumque optio consequatur 
+                    Ipsa nobis tempora quae beatae eaque cumque optio consequatur 
+                    asperiores voluptatem?
+                  </p>
+                  <br>
+                  <div class="banner-sabermais desktop">
+                    <div class="botao-sabermais"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="imagens/desktop/cabecalho4.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption desktop">
+                  <div class="observacao banner-novidade desktop">Novidade</div>
+                  <br>
+                  <h5 class="banner-titulo desktop">Senhora do amor e da guerra</h5>
+                  <br>
+                  <p class="banner-texto desktop">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Ipsa nobis tempora quae beatae eaque cumque optio consequatur 
+                    Ipsa nobis tempora quae beatae eaque cumque optio consequatur 
+                    asperiores voluptatem?
+                  </p>
+                  <br>
+                  <div class="banner-sabermais desktop">
+                    <div class="botao-sabermais"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+
+      <!-- Carousel Mobile -->
+      <div class="row d-block d-md-none">
+          <div id="carousel-mobile" class="carousel slide p-0" data-bs-ride="carousel">
+              <div class="carousel-indicators mobile">
+                <button type="button" data-bs-target="#carousel-mobile" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carousel-mobile" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carousel-mobile" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carousel-mobile" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="imagens/mobile/cabecalho1.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption mobile">
+                    <div class="observacao banner-novidade mobile">Novidade</div>
+                    <br>
+                    <h5 class="banner-titulo mobile">Senhora do amor e da guerra</h5>
+                    <br>
+                    <p class="banner-texto mobile">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                      Ipsa nobis tempora quae beatae eaque cumque optio consequatur 
+                      Ipsa nobis tempora quae beatae eaque cumque optio consequatur 
+                      asperiores voluptatem?
+                    </p>
+                    <br>
+                    <div class="banner-sabermais mobile">
+                      <div class="botao-sabermais"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="imagens/mobile/cabecalho2.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption mobile">
+                    <div class="observacao banner-novidade mobile">Novidade</div>
+                    <br>
+                    <h5 class="banner-titulo mobile">Senhora do amor e da guerra</h5>
+                    <br>
+                    <p class="banner-texto mobile">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                      Ipsa nobis tempora quae beatae eaque cumque optio consequatur 
+                      Ipsa nobis tempora quae beatae eaque cumque optio consequatur 
+                      asperiores voluptatem?
+                    </p>
+                    <br>
+                    <div class="banner-sabermais mobile">
+                      <div class="botao-sabermais"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="imagens/mobile/cabecalho3.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption mobile">
+                    <div class="observacao banner-novidade mobile">Novidade</div>
+                    <br>
+                    <h5 class="banner-titulo mobile">Senhora do amor e da guerra</h5>
+                    <br>
+                    <p class="banner-texto mobile">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                      Ipsa nobis tempora quae beatae eaque cumque optio consequatur 
+                      Ipsa nobis tempora quae beatae eaque cumque optio consequatur 
+                      asperiores voluptatem?
+                    </p>
+                    <br>
+                    <div class="banner-sabermais mobile">
+                      <div class="botao-sabermais"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="imagens/mobile/cabecalho4.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption mobile">
+                    <div class="observacao banner-novidade mobile">Novidade</div>
+                    <br>
+                    <h5 class="banner-titulo mobile">Senhora do amor e da guerra</h5>
+                    <br>
+                    <p class="banner-texto mobile">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                      Ipsa nobis tempora quae beatae eaque cumque optio consequatur 
+                      Ipsa nobis tempora quae beatae eaque cumque optio consequatur 
+                      asperiores voluptatem?
+                    </p>
+                    <br>
+                    <div class="banner-sabermais mobile">
+                      <div class="botao-sabermais"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </div>
+  </div>
+
+    <!-- CAIXA BRANCA -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="caixa-branca col d-none d-lg-flex">
+                <div class="div-imagem-autor">
+                  <img class="imagem-autor" src="imagens/desktop/FOTO-editada.jpg" alt="Escritor">
+                </div>
+
+                <div class="texto-caixa-branca col px-5 py-3">
+                  <div class="texto-caixa-branca-cima">
+                    <div class="t1 col-12">Bem-vindo ao meu site</div>
+                    <div class="p col-12 mt-4">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                      Odit illo vero quae maxime doloribus vitae cum, nostrum officiis, 
+                      tempore provident, eligendi id non architecto iusto omnis consectetur 
+                      veritatis quisquam vel. Error, ipsa! Libero, minus nemo ratione sapiente 
+                      suscipit, unde eos dolorem impedit nostrum cupiditate fugit tempora 
+                      corrupti. Suscipit debitis deleniti dolorem repellat quasi commodi 
+                      quae, perferendis quibusdam, laudantium officia amet ratione alias.
+                      <br>
+                      tempora? Sunt, dolorem porro. Iusto inventore iste distinctio, rerum 
+                      corporis ab beatae facere et numquam nihil fugiat odio repellendus in 
+                      ad! Labore alias saepe ea nemo recusandae possimus fuga magnam totam. 
+                      Explicabo ex possimus, laboriosam maiores odio labore.
+                      <br>
+                      tempora? Sunt, dolorem porro. Iusto inventore iste distinctio, rerum 
+                      corporis ab beatae facere et numquam nihil fugiat odio repellendus in 
+                      ad! Labore alias saepe ea nemo recusandae possimus fuga magnam totam. 
+                      Explicabo ex possimus, laboriosam maiores odio labore.
+                      tempora? Sunt, dolorem porro. Iusto inventore iste distinctio, rerum.
+                    </div>
+                  </div>
+                  <div class="col-12 d-flex justify-content-end texto-caixa-branca-baixo">
+                    <div class="botao-sabermais"></div>
+                  </div>
+                </div>
+            </div>
+
+            <!-- MOBILE -->
+            <div class="caixa-branca col-12 d-block d-lg-none">
+                <div class="div-imagem-autor col-12 text-center">
+                  <img class="imagem-autor" src="imagens/desktop/FOTO-editada.jpg" alt="Escritor">
+                </div>
+
+                <div class="texto-caixa-branca col mt-5">
+                  <div class="texto-caixa-branca-cima">
+                    <div class="t1 col-12">Bem-vindo ao meu site</div>
+                    <div class="p col-12 mt-4">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                      Odit illo vero quae maxime doloribus vitae cum, nostrum officiis, 
+                      tempore provident, eligendi id non architecto iusto omnis consectetur 
+                      veritatis quisquam vel. Error, ipsa! Libero, minus nemo ratione sapiente 
+                      suscipit, unde eos dolorem impedit nostrum cupiditate fugit tempora 
+                      corrupti. Suscipit debitis deleniti dolorem repellat quasi commodi 
+                      quae, perferendis quibusdam, laudantium officia amet ratione alias.
+                      <br>
+                      tempora? Sunt, dolorem porro. Iusto inventore iste distinctio, rerum 
+                      corporis ab beatae facere et numquam nihil fugiat odio repellendus in 
+                      ad! Labore alias saepe ea nemo recusandae possimus fuga magnam totam. 
+                      Explicabo ex possimus, laboriosam maiores odio labore.
+                      <br>
+                      tempora? Sunt, dolorem porro. Iusto inventore iste distinctio, rerum 
+                      corporis ab beatae facere et numquam nihil fugiat odio repellendus in 
+                      ad! Labore alias saepe ea nemo recusandae possimus fuga magnam totam. 
+                      Explicabo ex possimus, laboriosam maiores odio labore.
+                      tempora? Sunt, dolorem porro. Iusto inventore iste distinctio, rerum.
+                    </div>
+                  </div>
+                  <div class="col-12 mt-4 pt-3 d-flex justify-content-center texto-caixa-branca-baixo">
+                    <div class="botao-sabermais"></div>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- MEIO -->
+    <main class="container meio mx-auto">
+
+      <div class="row ultimos-livros">
+        <div class="col-11 px-4 mx-auto ultimos-livros-titulo t1">Últimos Livros</div>
+          <div class="col-11 px-4 mx-auto ultimos-livros-texto p">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Odit illo vero quae maxime doloribus vitae cum, nostrum officiis, 
+            tempore provident, eligendi id non architecto iusto omnis consectetur 
+            veritatis quisquam vel. Error, ipsa! Libero, minus nemo ratione sapiente 
+            suscipit, unde eos dolorem impedit nostrum cupiditate fugit tempora 
+            corrupti. Suscipit debitis deleniti dolorem repellat quasi commodi 
+            quae, perferendis quibusdam, laudantium officia amet ratione alias.
+            <br>
+            tempora? Sunt, dolorem porro. Iusto inventore iste distinctio, rerum 
+            corporis ab beatae facere et numquam nihil fugiat odio repellendus in 
+            ad! Labore alias saepe ea nemo recusandae possimus fuga magnam totam. 
+            Explicabo ex possimus, laboriosam maiores odio labore.
+          </div>
+          <div class="col-12 ultimos-livros-estante">
+
+          <!-- LIVRO 1 -->
+          <div class="livro">
+            <div class="livro-img">
+              <img src="imagens/desktop/livro1.jpg" alt="Livro 1">
+            </div>
+            <div class="livro-texto p-3">
+              <div class="livro-titulo t1">Senhora do amor e da guerra</div>
+              <div class="livro-observacao banner-novidade">NOVIDADE</div>
+              <div class="livro-sobre p">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              </div>
+              <div class="livro-sabermais">
+                <div class="botao-sabermais"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- LIVRO 2 -->
+          <div class="livro">
+            <div class="livro-img">
+              <img src="imagens/desktop/livro2.jpg" alt="Livro 2">
+            </div>
+            <div class="livro-texto p-3">
+              <div class="livro-titulo t1">O velho que pensava que fugia</div>
+              <div class="livro-observacao banner-novidade">Mais Vendido</div>
+              <div class="livro-sobre p">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              </div>
+              <div class="livro-sabermais">
+                <div class="botao-sabermais"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- LIVRO 3 -->
+          <div class="livro">
+            <div class="livro-img">
+              <img src="imagens/desktop/livro3.jpg" alt="Livro 3">
+            </div>
+            <div class="livro-texto p-3">
+              <div class="livro-titulo t1">O colecionador de amnésias</div>
+              <div class="livro-observacao banner-novidade">Em Promoção</div>
+              <div class="livro-sobre p">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              </div>
+              <div class="livro-sabermais">
+                <div class="botao-sabermais"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </main>
+
+    <footer class="container-fluid">
+      <!-- NAV FOOTER DESKTOP -->
+      <div class="row d-none d-md-block">
+        <div class="col-11 mx-auto">
+          <hr class="row linha-titulo-pagina linha-footer">
+          <nav class="row nav-footer">
+            <a href="#" class="menus-barra-rodape active">Home</a>
+            <a href="#" class="menus-barra-rodape">Autor</a>
+            <a id="botao-livros-footer" href="#" class="menus-barra-rodape" onclick="clickLivrosFooter()">Livros</a>
+            <a href="#" class="menus-barra-rodape">Imprensa</a>
+            <a href="#" class="menus-barra-rodape">Contactos</a>
+          </nav>
+          <hr class="row linha-titulo-pagina linha-footer">
+        </div>
+      </div>
+
+      <!-- NAV FOOTER MOBILE -->
+      <div class="row d-block d-md-none">
+        <hr class="col linha-titulo-pagina linha-footer mobile">
+      </div>
+
+      <!-- RODAPE DESKTOP -->
+      <div class="row rodape-desktop d-none d-md-block">
+
+        <div class="col-9 mx-auto dados-footer">
+          <div class="row dados-footer-1">
+            <div class="col-7">
+              <div class="row contactos-titulo mb-3">Contactos</div>
+              <div class="row">
+                <div class="col-6">
+                  <div class="row contactos-conteudo mb-1">Morada</div>
+                  <div class="row p">Lorem ipsum dolor sit amet, 12 1234-543 Lorem</div>
+                </div>
+                <div class="col-3">
+                  <div class="row contactos-conteudo mb-1">Telefone</div>
+                  <div class="row p">+351 123 456 789</div>
+                </div>
+                <div class="col-3">
+                  <div class="row contactos-conteudo mb-1">Email</div>
+                  <div class="row p">lorem@lorem.pt</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-5">
+              <div class="row contactos-titulo mb-4"><div class="col-12 text-center">Siga-me nas redes sociais</div></div>
+              <div class="row redes-sociais">
+                <a href=""><div class="icone instagram"></div></a>
+                <a href=""><div class="icone facebook"></div></a>
+                <a href=""><div class="icone linkedin"></div></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="row dados-footer-2">
+            <div class="col-7 p-0">
+              <a href="" class="reclamacoes"></a>
+              <a href="" class="ralc"></a>
+            </div>
+            <div class="col-5 p-0">
+              <div class="col-12 text-center p">Políticas de Cookies.</div>
+              <div class="col-12 text-center p">Copyright 2023 © Inês Veloso. Todos os direitos reservados.</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- MOBILE -->
+      <div class="row rodape-mobile d-block d-md-none">
+
+        <div class="col-11 mx-auto dados-footer text-center">
+          <div class="row dados-footer-1">
+            <div class="col-12">
+              <div class="col-12 contactos-titulo mb-3">Contactos</div>
+              <div class="row">
+                <div class="col-12">
+                  <div class="col-12 contactos-conteudo mb-1">Morada</div>
+                  <div class="col-12 p">Lorem ipsum dolor sit amet, 12 1234-543 Lorem</div>
+                </div>
+                <div class="col-12 mt-3">
+                  <div class="col-12 contactos-conteudo mb-1">Telefone</div>
+                  <div class="col-12 p">+351 123 456 789</div>
+                </div>
+                <div class="col-12 mt-3">
+                  <div class="col-12 contactos-conteudo mb-1">Email</div>
+                  <div class="col-12 p">lorem@lorem.pt</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 mt-5">
+              <div class="row contactos-titulo mb-4"><div class="col-12 text-center">Siga-me nas redes sociais</div></div>
+              <div class="row redes-sociais">
+                <a href=""><div class="icone instagram"></div></a>
+                <a href=""><div class="icone facebook"></div></a>
+                <a href=""><div class="icone linkedin"></div></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="row dados-footer-2">
+            <div class="col-12 p-0">
+              <a href="" class="reclamacoes"></a>
+              <a href="" class="ralc"></a>
+            </div>
+            <div class="col-12 p-0 mt-5">
+              <div class="col-12 text-center p">Políticas de Cookies.</div>
+              <div class="col-12 text-center p">Copyright 2023 © Inês Veloso. Todos os direitos reservados.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+</body>
+</html>

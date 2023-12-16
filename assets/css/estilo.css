@@ -1,0 +1,795 @@
+html {
+    scroll-behavior: smooth ;
+
+}
+
+body{
+    margin: 0px auto !important;
+    max-width: 1280px;
+    min-width: 360px;
+}
+
+#parte-superior{
+    margin-bottom: -47px;
+    max-height: 725px;
+    position: relative;
+}
+
+header{
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+}
+
+.t1{
+    font-family: "IBM Plex Sans";
+    font-weight: 500;
+    font-size: 23px;
+    color: #4D4D4D;
+    text-transform: uppercase;
+}
+
+.p{
+    font-family: "IBM Plex Sans";
+    font-weight: 300;
+    font-size: 13px;
+    color: #4D4D4D;
+}
+
+.p-bold{
+    font-family: "IBM Plex Sans";
+    font-weight: 600;
+    font-size: 13px;
+    color: #4D4D4D;
+}
+
+.titulo{
+    font-family: "IBM Plex Sans";
+    font-weight: bold;
+    font-size: 35px;
+    color: #4D4D4D;
+}
+
+.subtitulo-topo{
+    font-family: "Lato";
+    font-weight: 900;
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    color: #B47D33;
+}
+
+.menus-barra-rodape{
+    font-family: "Lato";
+    font-weight: 900;
+    font-size: 16px;
+    color: #4D4D4D;
+    
+    text-transform: uppercase;
+}
+
+.menus{
+    font-family: 18px;
+    font-weight: 700;
+    font-size: 18px;
+    color: #4D4D4D !important;
+    text-transform: uppercase;
+}
+
+.menus-barra-rodape:hover, .menus:hover, .menus.active, .menus-barra-rodape.active{
+    color: #B47D33 !important;
+}
+
+.submenus{
+    font-family: "IBM Plex Sans";
+    font-weight: 500;
+    font-size: 13px;
+    color: #4D4D4D !important;
+    text-transform: uppercase;
+}
+
+.submenus:hover, .submenus.active{
+    color: #B17E3B !important;
+    background-color: white !important;
+}
+
+.banner-novidade{
+    font-family: "IBM Plex Sans";
+    font-weight: 500;
+    font-size: 14px;
+    color: #B17E3B;
+    text-transform: uppercase;
+}
+
+.banner-titulo{
+    font-family: "IBM Plex Sans";
+    font-weight: 300;
+    font-size: 40px;
+    color: #4D4D4D ;
+    text-transform: uppercase;
+}
+
+.banner-texto{
+    font-family: "IBM Plex Sans";
+    font-weight: 300;
+    font-size: 13px;
+    color: #4D4D4D;
+}
+
+.destaques-home{
+    font-family: "IBM Plex Sans";
+    font-weight: bold;
+    font-size: 23px;
+    color: #4D4D4D ;
+    text-transform: uppercase;
+}
+
+.contactos-titulo{
+    font-family: "IBM Plex Sans";
+    font-weight: 500;
+    font-size: 20px;
+    color: #4D4D4D;
+    text-transform: uppercase;
+}
+
+.contactos-conteudo{
+    font-family: "IBM Plex Sans";
+    font-weight: 500;
+    font-size: 15px;
+    color: #B17E3B;
+    text-transform: uppercase;
+}
+
+.carousel{
+    max-height: 710px;
+}
+
+.carousel-item{
+    max-height: 710px;
+}
+
+.carousel-item > img{
+    max-height: 710px;
+}
+
+.titulo-pagina{
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 52px;
+}
+
+.titulo-pagina.mobile{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+.linha-titulo-pagina{
+    border: 1px solid #707070;
+    margin: 8px 0px 0px 0px !important;
+}
+
+.navbar-nav{
+    gap: 18px;
+}
+
+.navbar-nav.mobile{
+    background-color: white;
+    gap: 0px;
+    padding: 30px 0px;
+}
+
+.navbar.navbar-expand-md.mobile.active{
+    background-color: white;
+}
+
+.dropdown-menu{
+    background-color: white !important;
+    border: 0px !important;
+    border-radius: 0px !important;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 20px !important;
+    margin-top: 17px !important;
+}
+
+.dropdown-menu > li{
+    margin: 7px 0px !important;
+}
+
+.dropdown-item:hover{
+    background-color: white !important;
+}
+
+.carousel-caption{
+    position: absolute !important;
+    top: 0px !important;
+    left: 0px !important;
+    border: 0px solid red;
+    color: black !important;
+    width: 100% !important;
+    text-align: left !important;
+    padding: 0px !important;
+}
+
+.carousel-caption > .observacao{
+    border: 0px solid black;
+    display: inline-block;
+    margin-top: 270px;
+    margin-left: 195px;
+}
+
+.carousel-caption > h5{
+    border: 0px solid green;
+    display: inline-block !important;
+    max-width: 30% !important;
+    margin: 0px !important;
+    margin-top: 15px !important;
+    margin-left: 195px !important;
+}
+
+.carousel-caption > p{
+    border: 0px solid blueviolet;
+    display: inline-block !important;
+    line-height: 16px !important;
+    max-width: 38% !important;
+    margin: 0px !important;
+    margin-top: 13px !important;
+    margin-left: 195px !important;
+}
+
+.banner-sabermais{
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 195px;
+}
+
+.botao-sabermais{
+    width: 120px;
+    height: 30px;
+    background-image: url("../imagens/desktop/sabermais1.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: inline-block;
+}
+
+.botao-sabermais:hover{
+    background-image: url("../imagens/desktop/sabermais2.svg");
+    cursor: pointer;
+}
+
+.carousel-indicators{
+    display: inline-block !important;
+    margin: 0px !important;
+    top: 81% !important;
+    margin-left: 197px !important;
+}
+
+.carousel-indicators > button{
+    width: 20px !important;
+    height: 20px !important;
+    background-image: url("../imagens/desktop/bolabanner1.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.0) !important;
+    margin-right: 12px !important;
+}
+
+.carousel-indicators > button:hover, .carousel-indicators > button.active{
+    background-image: url("../imagens/desktop/bolabanner2.svg");
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.0) !important;
+}
+
+.caixa-branca{
+    background-color: white;
+    margin-left: 90px;
+    padding: 70px !important;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    z-index: 100;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+.texto-caixa-branca{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.caixa-branca-simples{
+    background-color: white;
+    margin-left: 90px;
+    margin-bottom: 70px;
+    padding: 50px 70px 15px 110px !important;
+
+    z-index: 100;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+.div-imagem-autor > img{
+    max-width: 310px;
+    max-height: 395px;
+}
+
+.meio{
+    margin: 0px 90px !important;
+}
+
+.ultimos-livros{
+    margin-top: 85px !important;
+}
+
+.ultimos-livros-texto{
+    margin-top: 23px !important;
+}
+
+.ultimos-livros-estante{
+    margin-top: 70px !important;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 45px;
+}
+
+.livro{
+    position: relative;
+    width: 325px !important;
+    height: 700px !important;
+    padding: 0px !important;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.2);
+}
+
+.livro-img > img{
+    width: 100%;
+    height: 425px;
+}
+
+.livro-texto{
+    height: 275px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-self: flex-start;
+}
+
+.livro-titulo{
+    line-height: 22px;
+    margin: 10px 0px 15px 0px;
+}
+
+.livro-observacao{
+    margin-bottom: 5px;
+}
+
+.livro-sabermais{
+    position: absolute !important;
+    bottom: 25px;
+    right: 20px;
+}
+
+footer{
+    margin-top: 106px;
+    margin-bottom: 70px;
+}
+
+.nav-footer{
+    margin: 20px 0px !important;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    flex-wrap: nowrap !important;
+    gap: 15px;
+}
+
+.linha-footer{
+    margin: 0px !important;
+}
+
+.nav-footer > a{
+    text-decoration: none;
+    width: auto;
+    font-size: 17px !important;
+}
+
+.dados-footer{
+    margin-top: 50px !important;
+}
+
+.redes-sociais{
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    justify-content: center !important;
+    gap: 25px;
+}
+
+.redes-sociais > a{
+    width: 37px !important;
+    height: 37px !important;
+    padding: 0px !important;
+}
+
+.icone{
+    width: 37px !important;
+    height: 37px !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: cover !important;
+}
+
+.instagram{
+    background-image: url("../imagens/desktop/instagram1.svg");
+}
+
+.instagram:hover{
+    background-image: url("../imagens/desktop/instagram2.svg");
+}
+
+.facebook{
+    background-image: url("../imagens/desktop/facebook1.svg");
+}
+
+.facebook:hover{
+    background-image: url("../imagens/desktop/facebook2.svg");
+}
+
+.linkedin{
+    background-image: url("../imagens/desktop/linkedin1.svg");
+}
+
+.linkedin:hover{
+    background-image: url("../imagens/desktop/linkedin2.svg");
+}
+
+.dados-footer-2{
+    margin-top: 58px !important;
+}
+
+.reclamacoes{
+    display: inline-block;
+    width: 77px !important;
+    height: 31px !important;
+    background-image: url("../imagens/desktop/livroreclamacoes.svg");
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: cover !important;
+}
+
+.ralc{
+    display: inline-block;
+    width: 125px !important;
+    height: 29px !important;
+    background-image: url("../imagens/desktop/ralc.svg");
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: cover !important;
+    margin-left: 43px !important;
+}
+
+#imagem-autor{
+    width: 80% !important;
+    height: 80% !important;
+    max-width: 500px !important;
+    max-height: 400px !important;
+}
+
+.botao-voltar-atras{
+    width: 132px !important;
+    height: 30px !important;
+    background-image: url("../imagens/desktop/voltar1.svg");
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: cover !important;
+    display: inline-block !important;
+    cursor: pointer;
+}
+
+.botao-voltar-atras:hover{
+    background-image: url("../imagens/desktop/voltar2.svg");
+}
+
+.botao-voltar-atras.pagina-livro{
+    margin-top: 40px;
+}
+
+.botao-vermais{
+    width: 100px !important;
+    height: 30px !important;
+    background-image: url("../imagens/desktop/vermais.svg");
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: cover !important;
+    display: inline-block !important;
+    cursor: pointer;
+}
+
+.botao-vermais:hover{
+    background-image: url("../imagens/desktop/vermais-cinza.svg");
+}
+
+.div-imagem-livro{
+    float: left;
+    margin-right: 125px;
+    margin-bottom: 60px;
+}
+
+.div-imagem-livro > img{
+    max-width: 310px !important;
+    max-height: 475px !important;
+    min-width: 275px !important;
+    min-height: 340px !important;
+}
+
+.divisor-contactos{
+    width: 60px;
+    margin: 40px auto;
+}
+
+
+.publicacao{
+    text-align: right;
+}
+
+
+.botao-setas{
+    display: inline-block;
+    border: 0px;
+    background-color: rgba(255, 255, 255, 0);
+    width: 17px;
+    height: 30px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    
+}
+
+.seta-esquerda{
+    background-image: url("../imagens/desktop/setaesquerda1.svg");
+    margin-right: 40px;
+}
+
+.seta-esquerda:hover{
+    background-image: url("../imagens/desktop/setaesquerda2.svg");
+}
+
+.seta-direita{
+    background-image: url("../imagens/desktop/setadireita1.svg");
+    margin-left: 40px;
+}
+
+.seta-direita:hover{
+    background-image: url("../imagens/desktop/setadireita2.svg");
+}
+
+.botao-numeros{
+    border: 0px;
+    background-color: rgba(255, 255, 255, 0);
+    font-family: "IBM Plex Sans";
+    font-weight: 500;
+    color: #707070;
+    font-size: 23px;
+}
+
+.botao-numeros:hover, .botao-numeros.active{
+    color: #B17E3B;
+    
+}
+
+#texto-completo{
+    display: none;
+}
+
+@media all and (max-width: 1225px){
+
+    .carousel-caption > .observacao.desktop{
+        margin-top: 190px;
+    }
+
+}
+
+@media all and (max-width: 1100px){
+
+    .carousel-caption > .observacao.desktop{
+        margin-top: 190px;
+    }
+
+    .banner-titulo.desktop{
+        font-size: 30px;
+    }
+
+    .banner-texto.desktop{
+        font-size: 11px;
+    }
+
+}
+
+@media all and (max-width: 991px){
+
+    #parte-superior{
+        margin-bottom: 0px !important;
+    }
+
+    .carousel-indicators{
+        top: 90% !important;
+    }
+    
+    .caixa-branca{
+        margin-left: 0px;
+        padding: 30px !important;
+    }
+
+    .caixa-branca-simples{
+        background-color: white;
+        margin-left: 0px;
+        padding: 50px 0px 20px 30px !important;
+    
+        z-index: 100;
+        box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.25);
+    }
+
+    .div-imagem-livro{
+        float: none;
+        margin-right: 0px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .div-imagem-livro > img{
+        width: 80%;
+    }
+
+    .botao-voltar-atras.pagina-livro{
+        display: none !important;
+    }
+
+}
+
+@media all and (max-width: 960px){
+
+    .carousel-caption > .observacao.desktop{
+        margin-top: 175px;
+    }
+
+    .banner-titulo.desktop{
+        font-size: 25px;
+    }
+
+    .banner-texto.desktop{
+        font-size: 10px;
+    }
+
+}
+
+@media all and (max-width: 850px){
+
+    .carousel-caption > .observacao.desktop{
+        margin-top: 165px;
+    }
+
+    .banner-titulo.desktop{
+        font-size: 20px;
+    }
+
+}
+
+@media all and (max-width: 767px){
+
+    #parte-superior{
+        max-height: 700px;
+    }
+
+    .navbar-toggler:focus{
+        outline: none !important;
+        border: 0px !important;
+        box-shadow: none !important;
+    }
+
+    .carousel{
+        max-height: 700px;
+        background-image: linear-gradient(rgb(220, 220, 220), rgb(222, 222, 222), rgb(208, 208, 208));
+    }
+    
+    .carousel-item{
+        max-height: 700px;
+    }
+    
+    .carousel-item > img{
+        max-width: 450px;
+        max-height: 700px;
+        margin: auto;
+    }
+    
+    .carousel-caption > .observacao.mobile{
+        width: 100%;
+        display: inline-block;
+        margin-top: 350px;
+        margin-left: 0px;
+        padding: 0px 7.5%;
+    }
+    
+    .carousel-caption > h5.mobile{
+        display: inline-block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0px !important;
+        margin-top: 15px !important;
+        margin-left: 0px !important;
+        padding: 0px 7.5%;
+        font-size: 28px;
+    }
+    
+    .carousel-caption > p.mobile{
+        display: inline-block !important;
+        line-height: 16px !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0px !important;
+        margin-top: 13px !important;
+        margin-left: 0px !important;
+        padding: 0px 7.5%;
+    }
+
+    .banner-sabermais.mobile{
+        display: inline-block;
+        margin-top: 15px;
+        margin-left: 0px;
+        width: 100%;
+        padding: 0px 7.5%;
+    }
+
+    .carousel-indicators.mobile{
+        margin: 0px !important;
+        top: 92% !important;
+        padding: 0px 7.5%;
+        height: 40px !important;
+    }
+
+    .div-imagem-autor > img{
+        width: 100%;
+        max-width: 310px;
+        max-height: 395px;
+    }
+
+    .linha-footer.mobile{
+        width: 325px;
+        margin: auto !important;
+    }
+
+    footer{
+        margin-top: 70px;
+    }
+
+}
+
+@media all and (max-width: 450px){
+
+    .titulo-pagina.mobile{
+        font-size: 28px;
+    }
+
+}
+
+@media all and (max-width: 440px){
+
+    .carousel-caption > .observacao.mobile{
+        margin-top: 88%;
+    }
+
+}
+
+@media all and (max-width: 360px){
+
+    .titulo-pagina.mobile{
+        font-size: 20px;
+    }
+
+}

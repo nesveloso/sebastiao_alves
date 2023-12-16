@@ -1,0 +1,117 @@
+body{
+    background-color: rgb(175, 175, 175);
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.quadro{
+    width: 80%;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 20px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+nav{
+    padding: 10px 10px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+nav > a{
+    display: inline-block;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    background-color: rgba(255, 255, 0, 0.4);
+}
+
+nav > a:hover, nav > a.active{
+    background-color: rgba(0, 255, 0, 0.4);
+}
+
+.erro{
+    color: red;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin: 10px 0px;
+}
+
+.imagem-autor{
+    max-width: 320px;
+    max-height: 400px;
+}
+
+.botoes{
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    background-color: rgba(0, 255, 255, 0.4);
+    cursor: pointer;
+}
+
+.botoes:hover{
+    background-color: rgba(0, 255, 0, 0.4);
+}
+
+.text-area{
+    resize: vertical;
+    width: 80%;
+    height: 300px;
+    min-height: 150px;
+}
+
+label{
+    font-weight: bold;
+}
+
+input[type = "text"], input[type = "number"]{
+    width: 80%;
+}
+
+table{
+    margin: auto;
+    width: 100%;
+}
+
+table, tr, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td > img{
+    max-height: 100px;
+    max-width: 100px;
+}
+
+.acoes{
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    background-color: rgba(0, 255, 255, 0.4);
+    cursor: pointer;
+}

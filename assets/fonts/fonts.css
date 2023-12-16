@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'IBM Plex Sans';
+    src: url('IBMPlexSans-Medium.eot');
+    src: url('IBMPlexSans-Medium.eot?#iefix') format('embedded-opentype'),
+        url('IBMPlexSans-Medium.woff2') format('woff2'),
+        url('IBMPlexSans-Medium.woff') format('woff'),
+        url('IBMPlexSans-Medium.ttf') format('truetype'),
+        url('IBMPlexSans-Medium.svg#IBMPlexSans-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IBM Plex Sans';
+    src: url('IBMPlexSans-Light.eot');
+    src: url('IBMPlexSans-Light.eot?#iefix') format('embedded-opentype'),
+        url('IBMPlexSans-Light.woff2') format('woff2'),
+        url('IBMPlexSans-Light.woff') format('woff'),
+        url('IBMPlexSans-Light.ttf') format('truetype'),
+        url('IBMPlexSans-Light.svg#IBMPlexSans-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IBM Plex Sans';
+    src: url('IBMPlexSans-Bold.eot');
+    src: url('IBMPlexSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('IBMPlexSans-Bold.woff2') format('woff2'),
+        url('IBMPlexSans-Bold.woff') format('woff'),
+        url('IBMPlexSans-Bold.ttf') format('truetype'),
+        url('IBMPlexSans-Bold.svg#IBMPlexSans-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('Lato-Black.eot');
+    src: url('Lato-Black.eot?#iefix') format('embedded-opentype'),
+        url('Lato-Black.woff2') format('woff2'),
+        url('Lato-Black.woff') format('woff'),
+        url('Lato-Black.ttf') format('truetype'),
+        url('Lato-Black.svg#Lato-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('Lato-Bold.eot');
+    src: url('Lato-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Lato-Bold.woff2') format('woff2'),
+        url('Lato-Bold.woff') format('woff'),
+        url('Lato-Bold.ttf') format('truetype'),
+        url('Lato-Bold.svg#Lato-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

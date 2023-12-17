@@ -1,7 +1,7 @@
 <?php
 
 // Globais
-$base_url = "http://localhost/sebastiao_alves/";
+$base_url = "https://happening-builders.000webhostapp.com/";
 $pag_atual;
 $raiz = __DIR__;
 
@@ -12,11 +12,10 @@ function getAssets(){
 
 // Novos dados de hospedagem
 $base_dados = [
-    "host" => "monorail.proxy.rlwy.net",
-    "user" => "root",
-    "password" => "d5G6GBa6CchcaC4eEH3bDHCC61E2dHDd",
-    "database" => "railway",
-    "port" => 41498
+    "host" => "localhost",
+    "user" => "id21684629_admin",
+    "password" => "",
+    "database" => "id21684629_sebastiao_alves_bd"
 ];
 
 $pdo = new PDO("mysql:host=" . $base_dados["host"] . ";port=" . $base_dados["port"] . ";dbname=" . $base_dados["database"], $base_dados["user"], $base_dados["password"]);
